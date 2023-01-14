@@ -11,15 +11,23 @@ import Root from "./routes/root";
 import Contact from "./routes/contact";
 import reportWebVitals from './reportWebVitals';
 import ErrorPage from "./routes/error-page";
+import MyTrip from './routes/myTrip';
+import OthersTrip from './routes/othersTrip';
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
     errorElement: <ErrorPage />,
-  }, {
-    path: "contacts/:contactId",
-    element: <Contact />,
-  },
+    children:[
+      {
+        path: "myTrip/",
+        element: <MyTrip />,
+      },{
+        path: "othersTrip/",
+        element: <OthersTrip />,
+      },
+    ]
+  }, 
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
