@@ -1,0 +1,20 @@
+
+User: {
+    userid 
+    Trip: {
+        Location
+        Days: {
+            day1: {
+                Location
+                accomidation
+                activities: {
+                    activity1: {
+                        Name
+                        Location
+                        Description
+                    }
+                }
+            }
+        }
+    }
+}

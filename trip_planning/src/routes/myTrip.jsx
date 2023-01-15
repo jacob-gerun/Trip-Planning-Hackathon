@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 export default function MyTrip() {
     return (
+        
         <div >
             <Link to="/newTrip">
                 <button type="button">

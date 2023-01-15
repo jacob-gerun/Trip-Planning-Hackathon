@@ -1,5 +1,7 @@
 // From https://reactrouter.com/en/main/start/tutorial
 import { Outlet, Link } from "react-router-dom";
+/** @jsxImportSource @emotion/react */
+import { css } from '@emotion/react';
 export default function Root() {
     return (
       <>
