@@ -14,6 +14,7 @@ import ErrorPage from "./routes/error-page";
 import MyTrip from './routes/myTrip';
 import OthersTrip from './routes/othersTrip';
 import NewTrip from './routes/newTrip';
+import ShowMyTrip from './routes/showMyTrip';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -29,6 +30,9 @@ const router = createBrowserRouter([
       }, {
         path: "newTrip/",
         element: <NewTrip />,
+      }, {
+        path: "showMyTrip/",
+        element: <ShowMyTrip user={"Default"} />
       },
     ]
   },
